@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body  {
+	background: #1abc9c;
+}
+
+#input1{
+	border-color: red;
+}
 
 .container {
 	padding: 80px;
