@@ -19,6 +19,18 @@ body  {
 	border-color: yellow;
 }
 
+.button1{
+	background-color: #BFBFBF;
+}
+
+.button1:hover {
+	background-color: #B720BC;
+}
+
+.button1:active{
+	background: blue;
+}
+
 .container {
 	padding: 80px;
 }
