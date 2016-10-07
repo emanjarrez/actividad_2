@@ -10,6 +10,13 @@ body  {
 	background: #1abc9c;
 }
 
+#button_print{
+	position: relative;
+	margin: 0 auto;
+	max-width: 60%;
+	text-align: center;
+}
+
 #input1{
 	border-color: red;
 }
@@ -29,6 +36,10 @@ body  {
 
 .button1:active{
 	background: blue;
+}
+
+.button2{
+	border-radius: 15px;
 }
 
 .container {

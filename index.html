@@ -13,7 +13,15 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="css/style5.css" />
+		<link href="css/print.css" rel="stylesheet" media="print" type="text/css" />
 		<script src="js/modernizr.custom.js"></script>
+
+		<script>
+		function myFunction() {
+		    window.print();
+		}
+		</script>
+
 	</head>
 	<body>
 		<div class="container">
@@ -45,8 +53,10 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-
 			</header>
+			<div id="button_print">
+				<button class="button2" onclick="myFunction()">Imprimir</button>
+			</div>
 			<nav id="bt-menu" class="bt-menu">
 				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 				<ul>
