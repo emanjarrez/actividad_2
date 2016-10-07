@@ -23,6 +23,68 @@
 		}
 		</script>
 
+		<script>
+		function draw()
+		{
+			var c=document.getElementById("canvas2");
+			var ctx2=c.getContext("2d");
+
+			ctx2.fillRect(0, 30, 120, 30);
+			ctx2.font = "20px Arial";
+			ctx2.fillStyle = "red";
+			ctx2.fillText("Input 1", 28, 50);
+
+			ctx2.strokeRect(150, 30, 80, 30);
+			ctx2.font = "20px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("combo", 160, 50);
+
+			ctx2.strokeRect(150, 60, 80, 20);
+			ctx2.font = "12px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("suma", 175, 72);
+
+			ctx2.strokeRect(150, 60, 80, 40);
+			ctx2.font = "12px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("resta", 175, 90);
+
+			ctx2.strokeRect(150, 60, 80, 60);
+			ctx2.font = "12px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("multiplicacion", 155, 112);
+
+			ctx2.strokeRect(150, 60, 80, 80);
+			ctx2.font = "12px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("division", 165, 135);
+
+			ctx2.fillRect(0, 145, 120, 30);
+			ctx2.font = "20px Arial";
+			ctx2.fillStyle = "red";
+			ctx2.fillText("Input 2", 28, 165);
+
+			ctx2.strokeRect(150, 145, 80, 30);
+			ctx2.font = "20px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("boton", 160, 165);
+
+			ctx2.strokeRect(0, 200, 230, 40);
+			ctx2.font = "20px Arial";
+			ctx2.fillStyle = "black";
+			ctx2.fillText("Input 3", 80, 230);
+
+			ctx2.moveTo(0,180);
+			ctx2.lineTo(230,180);
+			ctx2.strokeStyle = "#f00";
+			ctx2.stroke();
+
+
+		}
+
+		window.onload = draw;
+		</script>
+
 	</head>
 	<body onload="Mostrar();">
 		<div class="container">
@@ -59,6 +121,10 @@
 			</header>
 			<div id="button_print">
 				<button class="button2" onclick="myFunction()">Imprimir</button>
+			</div>
+
+			<div id="button_print">
+				<canvas id="canvas2" width="300" height="250">
 			</div>
 			
 			<nav id="bt-menu" class="bt-menu">
