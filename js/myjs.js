@@ -18,3 +18,9 @@ function Calcular()
 
     localStorage.setItem("Resultado", result);
 }
+
+function Mostrar()
+{
+	var res = localStorage.getItem("Resultado");
+	document.getElementById("resultado").value = res;
+}   
