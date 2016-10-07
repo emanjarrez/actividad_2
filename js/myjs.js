@@ -6,3 +6,15 @@ function Consola()
 
     console.log(input1, input2);
 }
+
+function Calcular()
+{
+    var operando1 = document.calc.input1.value;
+    var operando2 = document.calc.input2.value;
+    var operacion=document.getElementById("example").value;
+
+    var result = eval(operando1 + operacion + operando2);
+    document.calc.resultado.value = result;
+
+    localStorage.setItem("Resultado", result);
+}

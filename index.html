@@ -31,18 +31,20 @@
 				<p>My first paragraph</p>
 				<a title="Facebook" href="https://www.facebook.com/jelpapp/?fref=ts" target="_blank"><img src="img/f.png" width="10%" alt="Facebook" /></a>
 
-				<form action="#">
+				<form name="calc" action="#">
 					<input id="input1" type="text" name="input1">
 					<br><br>
 					<input id="input2" class="input2" type="text" name="input2">
 					<br><br>
-					<input class="button1" type="button" value="HOLA" onclick="Consola()">
+					<input id="resultado" type="text" name="resultado">
+					<br><br>
+					<input class="button1" type="button" value="CALCULAR" onclick="Calcular()">
 
-					<select name="example">
-					    <option value="S">Suma</option>
-					    <option value="R">Resta</option>
-					    <option value="M">Multiplicacion</option>
-					    <option value="D">Division</option>
+					<select id="example" name="example">
+					    <option value="+">Suma</option>
+					    <option value="-">Resta</option>
+					    <option value="*">Multiplicacion</option>
+					    <option value="/">Division</option>
 					</select>
 				</form>
 
